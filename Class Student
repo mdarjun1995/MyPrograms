@@ -1,0 +1,118 @@
+
+#include "stdafx.h"
+#include<iostream> 
+#include<conio.h>
+#include<cmath>
+#include<fstream>
+#include<string>
+#include<vector>
+//#include<bits/stdc++.h>
+
+using namespace std ; 
+
+class student
+{
+public: 
+	string name ; 
+	int marks ;
+	int roll_num ; 
+
+	vector<string> _name ; 
+	vector<int> _roll_num ; 
+	vector<int> _marks ; 
+
+} ;
+
+
+class division : public student  
+{
+
+public : 
+	void assignStudent(int rollNumber, string firstName, int urMarks)
+	{
+		_name.push_back(firstName) ; 
+		_roll_num.push_back(rollNumber) ;
+		_marks.push_back(urMarks) ;
+	}
+
+	void recordStudent()
+	{
+		cout<<"Enter Roll Number , Name & Marks of the student "<<endl ;
+		cin>> roll_num >> name >> marks ; 
+		assignStudent(roll_num,name,marks) ; 
+		 
+	}
+
+	void displayData()
+	{
+		for(int i = 0 ; i<_name.size() ; i++)
+		{
+			cout<<_roll_num[i]<<" "<<_name[i]<<" "<<_marks[i]<<endl ; 
+		}
+
+	}
+
+	int searchIndex(string name) 
+	{
+		for(int i = 0 ; i<_name.size(); i++)
+		{
+			if(_name[i]==name)
+				return i ; 
+			else
+				cout<<"The student not available in database"<<endl ; 
+				return 0 ;
+		}
+	}
+
+	void editMarks(int index,int newMarks) 
+	{
+		 _marks[index] = newMarks ; 
+	}
+	
+} ;
+
+int main()
+{
+	int option, count_divA ; 
+	string name ;
+	int newMarks ; 
+	division divA ;
+	cout<<"Enter the number of the students in the division " << endl ; 
+	cin>> count_divA ; 
+
+
+	cout<<"Choose below options " << endl ; 
+	cout<<"Press 1 to add student" << endl ; 
+	cout<<"Press 2 to display records of the student" << endl ;
+	cout<<"Press 3 to edit Marks of the students " << endl ; 
+	cin>> option ;
+
+	switch(option)
+	{		
+		case 1 : 
+			for(int i = 0 ; i< count_divA; i++ ) 
+				{
+					divA.recordStudent() ;
+		
+				} 
+			cout<<count_divA<< " Students added succesfully....!" ;  
+		case 2 : 
+			cout<<"Find the details as below.....\n" ; 
+			divA.displayData() ;
+			//break ; 
+		case 3 : 
+			cout<<"Enter the name of the student whoose marks to be edited\n" ;
+			cin>> name ; 
+			cout<< " New marks = "<<endl ; 
+			cin>>newMarks ; 
+			divA.editMarks(divA.searchIndex(name),newMarks) ;
+			
+			//divA._marks[divA.searchIndex(name)] = newMarks ; 
+			cout<<" Marks updated succesfully" << endl ; 
+			cout<<" find updated details below ... " <<endl ; 
+			divA.displayData() ;
+			break;
+		 
+	}
+	return  0 ; 
+}
