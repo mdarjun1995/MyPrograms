@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TreeNode" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValueNode" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAQAAAAAAAAAQAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddNode" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SubNode" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MultNode" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DivNode" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowNode" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Expression Evaluator.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
